@@ -25,7 +25,7 @@ class Renderer():
         # outputBox.grid(row=0, column=0)
 
         # Create number buttons
-        button_0 = Button(root, text="0", bg="#2D2D2D", fg="#EEEEEE", width=3, pady=5)
+        button_0 = Button(root, text="0", bg="#2D2D2D", fg="#EEEEEE", width=3, height=1)
         button_0.config(command=partial(self.calculator.append_expression, button_0.cget("text")))
         button_0.grid(row=4, column=0)
 
@@ -33,7 +33,7 @@ class Renderer():
         current_column = 0
 
         for i in range (1, 10):
-            current_button = Button(root, text=str(i), bg="#2D2D2D", fg="#EEEEEE", width=3, pady=5)
+            current_button = Button(root, text=str(i), bg="#2D2D2D", fg="#EEEEEE", width=3, height=1)
             current_button.config(command=partial(self.calculator.append_expression, current_button.cget("text")))
             current_button.grid(row=current_row, column=current_column)
 
@@ -47,16 +47,16 @@ class Renderer():
         current_row = 1
 
         for operator in operators:
-            current_button = Button(root, text=operator, bg="#2D2D2D", fg="#EEEEEE", width=3, pady=5)
+            current_button = Button(root, text=operator, bg="#2D2D2D", fg="#EEEEEE", width=3, height=1)
             current_button.config(command=partial(self.calculator.append_expression, current_button.cget("text")))
             current_button.grid(row=current_row, column=4)
             current_row += 1
 
-        decimal_button = Button(root, text=".", bg="#2D2D2D", fg="#EEEEEE", width=3, pady=5)
+        decimal_button = Button(root, text=".", bg="#2D2D2D", fg="#EEEEEE", width=3, height=1)
         decimal_button.config(command=partial(self.calculator.append_expression, decimal_button.cget("text")))
         decimal_button.grid(row=4, column=1)
 
-        equals_button = Button(root, text="=", bg="#2D2D2D", fg="#EEEEEE", width=3, pady=5)
+        equals_button = Button(root, text="=", bg="#2D2D2D", fg="#EEEEEE", width=3, height=1)
         equals_button.config(command=partial(self.calculator.append_expression, equals_button.cget("text")))
         equals_button.grid(row=4, column=2)
 
