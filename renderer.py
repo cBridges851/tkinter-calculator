@@ -57,7 +57,7 @@ class Renderer():
         decimal_button.grid(row=4, column=1)
 
         equals_button = Button(root, text="=", bg="#2D2D2D", fg="#EEEEEE", width=3, height=1)
-        equals_button.config(command=partial(self.calculator.append_expression, equals_button.cget("text")))
+        equals_button.config(command=self.calculator.evaluate_expression)
         equals_button.grid(row=4, column=2)
 
         root.mainloop()

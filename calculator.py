@@ -14,3 +14,13 @@ class Calculator():
         '''
         self.expression += value
         print(self.expression)
+
+    def evaluate_expression(self):
+        '''
+            Evaluates the expression that is part of the class.
+        '''
+        self.expression = self.expression.replace("−", "-")
+        self.expression = self.expression.replace("×", "*")
+        self.expression = self.expression.replace("÷", "/")
+        print(eval(self.expression))
+        self.expression = ""
