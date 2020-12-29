@@ -21,5 +21,9 @@ class Calculator():
         self.expression = self.expression.replace("−", "-")
         self.expression = self.expression.replace("×", "*")
         self.expression = self.expression.replace("÷", "/")
-        self.expression = eval(self.expression)
-        self.expression = str(self.expression)
+        try:
+            self.expression = eval(self.expression)
+            self.expression = str(self.expression)
+        except Exception as e:
+            print(f"ERROR IN APPLICATION: {e}")
+            self.expression = ""
