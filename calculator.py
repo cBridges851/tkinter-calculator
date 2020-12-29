@@ -24,5 +24,6 @@ class Calculator():
         try:
             self.expression = eval(self.expression)
             self.expression = str(self.expression)
-        except:
+        except Exception as e:
+            print(f"ERROR IN APPLICATION: {e}")
             self.expression = ""
