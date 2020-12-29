@@ -13,7 +13,6 @@ class Calculator():
             Appends values to the expression.
         '''
         self.expression += value
-        print(self.expression)
 
     def evaluate_expression(self):
         '''
@@ -22,5 +21,5 @@ class Calculator():
         self.expression = self.expression.replace("−", "-")
         self.expression = self.expression.replace("×", "*")
         self.expression = self.expression.replace("÷", "/")
-        print(eval(self.expression))
-        self.expression = ""
+        self.expression = eval(self.expression)
+        self.expression = str(self.expression)
