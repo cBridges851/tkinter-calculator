@@ -1,4 +1,5 @@
 # tkinter-calculator
+[![CodeFactor](https://www.codefactor.io/repository/github/cbridges851/tkinter-calculator/badge)](https://www.codefactor.io/repository/github/cbridges851/tkinter-calculator)
 This is my first application using Tkinter. It is a basic calculator where the user can add, subtract, multiply and divide numbers.
 
 ## Motivation
