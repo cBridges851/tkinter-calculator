@@ -16,3 +16,6 @@ Tkinter - a standard library in Python to make applications with GUIs.
 - When the application has opened, you should see the interface looking like this:  
 ![Calculator Interface](calculator.png)
 - Make an input by pressing on the buttons and press equals to get a result.
+
+## Contributing
+If you have any ideas for features or come across any bugs you'd like to fix, feel free to create an issue! I'll review it and assign you to it as soon as I can :)
